@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+
+<body>
+    <h1>String Method</h1>
+
+    <script>
+
+        // Note: A string is immutable means it can never be changed
+        // eg: name="kapil" .. name already contain Dilshad hence it can not be changed
+        let name = "Dilshad";
+        console.log(name.length);
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+        console.log(name[0]);
+
+        console.log(name.slice(2, 4)); // print l and s ( index 2 and 3  , 4 not included)
+        console.log(name.slice(2)); // print lshad...print whole string from index 2
+
+        console.log(name.replace("shad", "saad"));
+        //   console.log(name.replace("ShaD","saad"));  // character will be matched
+
+        let name1 = "Dilshad";
+        let name2 = "Naman";
+        console.log(name1.concat(" is a friend of ", name2, " Ok "));
+        // let name3=name1.concat(name2, "Yes");
+        //  console.log(name3);
+
+        let name3 = "       abhi       ";
+        console.log(name3);
+        console.log(name3.trim());
+   
+        // use a for loop to print a string
+
+        let data ="Dilshad";
+        for(let i=0;i<data.length;i++ ){
+            console.log(data);
+        }
+
+    </script>
+</body>
+
+</html>

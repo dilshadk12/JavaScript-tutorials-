@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 4</title>
+</head>
+
+<body>
+    <!-- 1. What will the following print in javascript?
+       console.log("har\"".length);
+    2. Explore the includes,starts whith and endswith functions of a string.
+    3. Write a program to convert a given string to lowercase.
+    4. Extract the amount out of this string " Please giv RS 1000"
+    5. Try to change 4th character of a given string.    -->
+    <h1>Practice set on strings</h1>
+
+
+    <script>
+
+        // Question 1
+        console.log("Har\"".length); // answer: 4
+
+        // Question 2
+        // Includes
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+        const word = 'fox';
+        console.log(sentence.includes(word));
+
+        console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+        // Expected output: "The word "fox" is in the sentence"
+
+
+        // Starts with
+        const str1 = 'Saturday night plans';
+
+        console.log(str1.startsWith('Sat'));
+        // Expected output: true
+
+        console.log(str1.startsWith('Sat', 3));  // 3 is position here
+        // Expected output: false
+
+        // Starts with
+
+
+        const str2 = 'Cats are the best!';
+
+        console.log(str2.endsWith('best!'));
+        // Expected output: true
+
+        console.log(str2.endsWith('best', 17));
+        // Expected output: true
+
+        const str3 = 'Is this a question?';
+
+        console.log(str3.endsWith('question'));
+        // Expected output: false
+
+
+        // Question 3
+
+        let name = "DILSHAD";
+        console.log(name.toLowerCase());
+
+        // Question 4
+        let sent = "Please give RS 1000"
+        console.log(sent.slice(0, 15));
+
+        // Question 5
+        console.log(sent.replace("1000", "2000"));
+
+        ////// OR ////////
+        let friend="Deepika";
+        friend[3]="R";  /// won't change due to immutable
+        console.log(friend);
+
+
+    </script>
+</body>
+
+</html>

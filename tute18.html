@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+
+    <h1>Array Methods 2</h1>
+
+    <script>
+
+        let num = [21, 12, 53, 84, 35, 61, 27, 18, 89];
+        console.log(num.length);
+        delete num[0];  // legth affect nahi hoti he
+        console.log(num);
+        console.log(num.length);
+
+        // concat two array
+
+        let num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let num2 = [11, 12, 13, 14, 15, 16, 17, 18, 19];
+        let newArray = num1.concat(num2);
+        console.log(newArray);
+        console.log(num1, num2);
+
+        // concat three array
+        let num3 = [521, 252, 253, 254, 255, 256, 257, 258, 259];
+        let AnotherNewArray = num1.concat(num2, num3);
+        console.log(AnotherNewArray);
+
+
+        // array Sort
+
+        num.sort();  // ascending order
+        console.log(num);  // array is modified
+
+
+
+        function compare(a, b) {    // necessory to write compare function to sort ascending or descending
+            //  return a - b;  // sort ascending order
+            return b - a;  // sort descending order
+        }
+        num.sort(compare);
+        console.log(num);
+
+
+        // Array reverse
+
+        num.reverse();
+        console.log(num);
+
+
+        // Splice and Slice
+
+        let num6 = [11, 12, 13, 14, 15, 16, 17, 18, 19];
+        //  num6.splice(2, 3, 1021, 1022, 1023, 1024, 1025);
+        /*  start from index 2
+          remove 3 Elements
+          add these elements  */
+
+        // console.log(num6);
+        // does not modify original array so create new array and print into it
+        //     let Newnum=num6.slice(3);  // delete 1,2,3 leave 4th index
+        let Newnum = num6.slice(3, 5);  // start from index 3 till index 5 .. won't print index 5
+        console.log(Newnum);  // means print 14,15.. 16 is on index 5 
+
+
+
+
+
+    </script>
+</body>
+
+</html>

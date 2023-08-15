@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression and conditional</title>
+</head>
+<body>
+    
+<h1>Expressions and Conditonals</h1>
+
+
+    <script>
+       // 77;
+        //"Dilshad"
+        console.log("operators in jS");
+        //Arithmetic Operator
+        let a=40;
+        let b=10;
+        console.log("a + b=", a+b);
+        console.log("a - b=", a-b);
+        console.log("a * b=", a*b);
+        console.log("a / b=", a/b);
+        console.log("a ** b=", a**b);
+        console.log("a % b=",a%b);
+        console.log("a++ =",a++);
+        console.log("a-- =",a--);
+        console.log("++a =",++a);
+        console.log("--a =",--a);
+
+        //Assignment Operator
+        let p =5;
+        p += 5; // same as p = p+5
+        console.log("p is now=",p);
+        p -= 5; // same as p = p+5
+        console.log("p is now=",p);
+        p *= 5; // same as p = p+5
+        console.log("p is now=",p);
+        p /= 5; //// same as p = p+5
+        console.log("p is now=",p);
+
+        //Comparison Operator
+        let comp1 = 6; 
+        let comp2 = 6; 
+        
+        console.log("comp1 == comp2 is", comp1 == comp2);
+        console.log("comp1 != comp2 is", comp1 != comp2); // does not diff b/w type
+        console.log("comp1 === comp2 is", comp1 === comp2);   // Differentiate b/w type
+        console.log("comp1 !== comp2 is", comp1 !== comp2);
+
+
+        let comp3 = 6;   //is a Number 
+        let comp4 = "6"; // is a string
+        console.log("comp3 == comp4 is", comp3 == comp4);
+        console.log("comp3 != comp4 is", comp3 != comp4);
+        console.log("comp3 === comp4 is", comp3 === comp4);   // False cuz value is same but type is different
+        console.log("comp3 !== comp4 is", comp3 !== comp4);
+
+        let comp5 = 6; 
+        let comp6 = 8; 
+        console.log("comp5 > comp6 is", comp5 > comp6);
+
+
+        //Logical Operator
+
+        let x =5;
+        let y =6;
+        console.log(x<y && x==5);
+        console.log(x>y && x==5);  //AND
+        console.log(x<y || x==5); // OR
+        console.log(!false);
+        console.log(!true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <h1>For Loop</h1>
+
+
+    <script>
+        
+                // For Loop
+
+                for (let i = 0; i < 10; i++) {
+                    console.log(i);
+                }
+        
+
+        // program to add first 10 natural no.
+        
+         let sum = 0;
+         let n = prompt("Enter the no.");
+         n = parseInt(n);
+         for (let i = 0; i < n; i++) {
+             sum += (i + 1);
+             console.log((i + 1), "+");
+         }
+         console.log("sum of first " + n + " natural number is " + sum);
+ 
+        // For-In Loop  uses object/keys
+
+       let obj = {
+            Dilshad: 80,
+            Shubh: 70,
+            Kapil: 90,
+            Anand: 75,
+        }
+        for (let a in obj) {
+            console.log(" Marks of " + a + " is " + obj[a]);
+        }
+         o/p
+         Dilshad: 80,
+            Shubh: 70,
+            Kapil: 90,
+            Anand: 75,
+
+
+        For-of Loop  
+        for (let b of "Shubh") {
+            console.log(b);
+        }
+         o/p
+        S
+        h
+        u
+        b
+        h
+
+
+// For each loop::: used in array
+
+var a=[1,2,3,4,5,6,7,8,9,10,11];
+a.forEach(function(val)
+{                              // value= each value of array 
+    console.log(val+20);
+}
+)
+
+// for in loop
+
+var obj={
+    name="dilshad",
+    age:25,
+    city:"jodhpur"
+}
+for(var key in obj){
+    console.log(key);
+    console.log(key, obj[key]);
+
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in Array</title>
+</head>
+
+<body>
+    <h1>Looping in Array</h1>
+
+    <script>
+
+        let num = [3, 54, 1, 2, 4]
+        /*           for (let i = 0; i < num.length; i++) {
+                       console.log(num[i]);
+                   }
+                   */
+
+        // For each loop
+        /*      let num = [3, 54, 1, 2, 4];
+      
+              num.forEach((element) => {
+                  console.log(element * element);
+              })
+      
+      */
+
+
+        // Array.from
+
+        /*    let name = "Dilshad"
+            let arr = Array.from(name);  // convert name into array form
+            console.log(arr);
+            */
+
+
+        // For of loop for array
+
+        for (let i of num) {
+            console.log(i);
+        }
+
+        // For in loop for array  // it will give keys/index of an array
+
+        for (let item in num) {
+            console.log(item);   // give keys/index
+            console.log(num[item]); // give elements
+
+        }
+
+    </script>
+</body>
+
+</html>

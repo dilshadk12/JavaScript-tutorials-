@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h1>Functions in JS</h1>
+
+
+    <script>
+        /*  Functions In JavaScript
+        
+                let a = 1;
+                let b = 2;
+                let c = 3;
+                console.log("Average of a and b ", (a + b) / 2);
+                console.log("Done");
+                console.log("Average of b and c ", (b + c) / 2);
+                
+                console.log("Done");
+                console.log("Average of a and c ", (c + a) / 2);
+        console.log("Done");
+                */
+
+        function avg(x, y) {
+            return (x + y) / 2;
+        }
+
+
+        let a = 1;
+        let b = 2;
+        let c = 3;
+        console.log("Average of a and b ", avg(a, b));
+        console.log("Average of b and c ", avg(b, c));
+        console.log("Average of c and a ", avg(c, a));
+
+        ///////////////////////////////////////////////////////////////
+
+        const sum = (p, q) =>    // Arrow Function
+        {
+            return p + q;
+        }
+        console.log(sum(9, 7));
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

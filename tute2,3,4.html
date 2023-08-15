@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables in JS</title>
+</head>
+
+<body>
+
+  <h1> Variables and data types</h1>
+  <script>
+    //  VARIABLE DECLARATION
+    //var a =7;
+    //console.log(a);
+
+    //let b="Dilshad";
+    //console.log(b);
+
+    ///////////////////////////////////////////
+
+    //DATA TYPES
+
+    let a = null;
+    let b = 12;
+    let c = true; //false can be used also
+    let d = BigInt(540) + BigInt(10);
+    let e = "Dilshad";
+    let f = "This is a symbol data type";
+    //let g = undefined; 
+    // or
+    let g;
+
+    console.log(a, b, c, d, e, f, g);
+
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    console.log(typeof d);
+    console.log(typeof e);
+    console.log(typeof f);
+    console.log(typeof g);
+    // o/p-> Undefined
+
+    //////////////////////////////////////////////
+    // OBJECTS 
+
+    const item = {
+      "Dilshad": true,
+      "Harry": false,
+      "aman": 67,
+      "Rohan": undefined
+    }
+    //console.log(item["Harry"]);
+    console.log(item);
+
+    ///////////////////////////////////////////////////////
+    //QUIZ
+
+    // Write a JS program to store name,phone number and marks of a student using objects
+
+    const info = {
+      name: "Dilshad",
+      phone: "7765455278",
+      marks: "76%"
+    }
+    console.log(info);
+
+  </script>
+</body>
+
+</html>

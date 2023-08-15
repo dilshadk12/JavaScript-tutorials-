@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <h1>Introduction to Array</h1>
+
+
+    <script>
+
+        let marks = [50, 80, 70, 48, false, null, "Not present"]
+        console.log(marks);
+
+        console.log(marks[0]);
+        console.log(marks[1]);
+        console.log(marks[2]);
+        console.log(marks[3]);
+        console.log(marks[4]);
+        console.log(marks[5]);
+        console.log(marks[6]);
+        console.log(marks[7]); // undefined cuz only 7 arrays are declared
+
+        console.log("THe length of marks is", marks.length);
+
+        // adding a new value to an array
+        marks[7] = 98;
+        console.log(marks[7]); // will print 98
+
+        // changing the value of an array
+        marks[7] = 100;
+        console.log(marks[7]);
+
+
+        console.log(typeof(marks));
+
+
+        // Print an array using for loop
+
+        let print=["Dilshad","Harish","Mukesh","Ashish",55,87,25,69];
+        for(let i=0;i<=print.length;i++)
+        {
+            console.log(print[i]);
+        }
+
+    </script>
+</body>
+
+</html>

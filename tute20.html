@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map filter reduce</title>
+</head>
+
+<body>
+
+    <h1>Map,Filter and Reduce</h1>
+
+    <script>
+        // Difference between map and for each is :: we use map when we want to create a new array
+        // and for each we use when we want to do any operation
+
+
+        // all these function do not modify the original array
+        // Map function Method  ::: it returns array
+        let arr = [45, 23, 21];
+        //console.log(arr);
+        arr.map((value, index, array) => {
+            console.log(value, index, array);
+        })
+
+        // Filter funtion array    ::: it also returns array
+
+        let arr2 = [45, 23, 21, 0, 2, 3];
+        let a2 = arr2.filter((a) => {    // a= value .. we can name it anything
+            return a < 10;
+        })
+        console.log(a2);
+
+        // Reduce function array ::: it returns a value
+
+        let arr3 = [1, 2, 3, 5, 2, 1];
+        let sum = arr3.reduce((value1, value2) => {
+            return value1 + value2;
+        })
+        console.log(sum);
+        //// o/p:: 14   why?? answer:1+2=3; 3+3=6; 6+5=11; 11+2=13; 13+1=14;
+
+
+
+        ////or   we can do this by making a alone function and pass values
+        const reduce_func = (h1, h2) => {
+            return h1 + h2
+
+        }
+        let newarr3 = arr3.reduce(reduce_func);
+        console.log(newarr3);
+
+    </script>
+
+</body>
+
+</html>
