@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Practice set 6</title>
+</head>
+
+<body>
+   <h1>Chapter 6 Practice set 6</h1>
+   <!-- 1. Write a program using prompt function to take input of age as a 
+       value from the user and use alert to tell him if he can drive!
+    2. In Q1 use confirm to ask the user if he wants to see the prompt again.
+    3. In the previus question, use console.erroe to log the error if the 
+       age entered is negative.
+    4. Write a program to change the url to google.com(redirection) if user  
+       enters a number greater than 4.
+    5. change the background of the page to yellow, red or any other color 
+    based on user input through prompt. -->
+
+   <script>
+
+      // Question 1
+      /*  let run_again=true;
+        let age = prompt("enter the number");
+        age = Number.parseInt(age);
+        if (age > 18) {
+           alert("You are eligible to drive");
+        }
+        else {
+           alert("You can not drive");
+        }
+        */
+
+      // Question 2
+      /*  let run_again = true;
+  
+        while (run_again) {
+  
+           let age = prompt("enter the number");
+           age = Number.parseInt(age);
+  
+           if (age > 18) {
+              alert("You are eligible to drive");
+           }
+           else {
+              alert("You can not drive");
+           }
+  
+           run_again = confirm("Do you want to enter age again");
+        }
+        */
+      //Question 3
+
+      /*   let run_again = true;
+   
+         while (run_again) {
+   
+            let age = prompt("enter the number");
+            age = Number.parseInt(age);
+   
+            if (age < 0) {
+               console.error("age should not be less than 0");
+               break;
+            }
+   
+            if (age > 18) {
+               alert("You are eligible to drive");
+            }
+            else {
+               alert("You can not drive");
+            }
+   
+            run_again = confirm("Do you want to enter age again");
+         }
+         */
+
+      // Question 4
+
+      /* let number = prompt("enter the number");
+            number = Number.parseInt(number);
+            
+            if (number > 4) {
+              location.href="https://google.com"; // open in same tab .. not in different tab
+                  
+               }
+      */
+      // Question 5
+
+     
+
+      let color = prompt("enter the color to change the background color ");
+      document.body.style.background = color;
+  
+   
+   </script>
+</body>
+
+</html>
