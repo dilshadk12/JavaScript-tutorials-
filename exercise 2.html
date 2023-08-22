@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 2</title>
+</head>
+
+<style>
+    body{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <!-- Exercise 2
+    Use JavaScript to create a game of snake, water & gun.
+    The game should ask you to enter S, w or G. The computer
+    should be able to randomly generate S, W or G and declare
+    win loose using alert. Use confirm and prompt whenever
+    required. -->
+    <script>
+        let user = prompt("Enter S,W or G");
+
+        // generate two random number 0,1,2:for snake water and gun respectively
+        let cpu_I = Math.floor(Math.random() * 3);  // floor to get value in whole number
+
+        let cpu = ["S", "W", "G"][cpu_I]
+
+        const match = (cpu, user) => {
+            if (cpu === user) {
+                return "Nobody";
+            }
+            else if (cpu === "S" && user === "W") {
+                return "cpu";
+            }
+            else if (cpu === "S" && user === "G") {
+                return "user";
+            }
+            else if (cpu === "G" && user === "W") {
+                return "user";
+            }
+            else if (cpu === "G" && user === "S") {
+                return "cpu";
+            }
+            else if (cpu === "W" && user === "S") {
+                return "user";
+            }
+            else if (cpu === "W" && user === "G") {
+                return "cpu";
+            }
+        }
+        let result = match(cpu,user)
+        document.write(`CPU: ${cpu}<br>User: ${user}<br>The winner is: " ${result}`);
+
+    </script>
+</body>
+
+</html>
