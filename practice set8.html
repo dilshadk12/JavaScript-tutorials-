@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 8</title>
+</head>
+<style>
+    .bulb {
+
+        background-color: cyan;
+    }
+
+    .bulb-container {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+
+    <!-- 1. Write a program to show different alerts when different buttons are clicked
+    2. create a website which is capable of storing bookmarks of yours favourite website 
+       using href.
+    3. Repeat q2 using event listeners.
+    4. Write a javascript program to keep fetching contents of a website(every 5 sec)
+    5. create a glowing bulb effect using classList toggle method in javascript. -->
+
+    <!-- Question -->
+    <!-- <button onclick="alert('Hii , How are you')">Hii</button>
+    <button onclick="alert('Okay! Good Bye')">Bye</button>
+    <button onclick="alert('Helloooo! How do you do?')">Hello</button> -->
+
+    <!-- Question 2 -->
+    <!-- <h1>Bookmarks</h1>
+    <a href="https://www.google.com" target="_blank"><button>Google</button></a>
+    <a href="https://www.facebook.com" target="_blank"><button>Facebook</button></a>
+    <a href="https://www.twitter.com" target="_blank"><button>Twitter</button></a> -->
+
+    <!-- Question 3 -->
+
+    <!-- <button id="google">Google</button>
+    <button id="facebook">FaceBook</button>
+    <button id="twitter">Twitter</button> -->
+
+
+    <div id="bulb" class=" bulb-container bulb"></div>
+    <script>
+        //  Question 3 
+        // document.getElementById("google").addEventListener('click', function () {
+        //     window.location = "https://www.google.com";
+        // })
+        // document.getElementById("facebook").addEventListener('click', function () {
+        //     window.location = "https://www.facebook.com";
+        // })
+        // document.getElementById("twitter").addEventListener('click', function () {
+        //     window.location = "https://www.google.com";
+        // })
+
+
+        // // Question 4
+        // const fetchContent = async (url) => {
+        //     let con = await fetch(url);
+        //     let a = await con.json();
+        //     return a;
+        // }
+        // setInterval(async function () {
+        //     let url = "https://jsonplaceholder.typicode.com/todos/1"
+        //     console.log(await fetchContent(url))
+        // }, 3000);
+
+        // Question 5
+        setInterval(async function () {
+            document.querySelector('#bulb').classList.toggle("bulb");
+        }, 500)
+    </script>
+</body>
+
+</html>
